@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AKN Bojonegoro</title>
+</head>
+<body>
+    <h1 style="color:red">JavaScript Can Change Images</h1>
+    <img id="myimage" onclick="changeImage()" src="https://cdn.idntimes.com/content-images/post/20170812/indonesia-metalhead-president-joko-widodo-c08c090a227a0ba5078692e58bd81b6f.jpg">
+    <p>Click the image to change image.</p>
+    <script>
+        function changeImage() {
+            var image = document.getElementById('myImage');
+            if (image.src.match("bulbon")) {
+                image.src = "https://1.bp.blogspot.com/-DdTNsvAS824/YOGN75Tqp5I/AAAAAAAAI4k/o39KBOCqsg4ubgCzMPGx7-H6v8JxNd4sQCLcBGAsYHQ/w1200-h630-p-k-no-nu/images%2B%252827%2529.jpeg";
+            } else {
+                image.src = "https://1.bp.blogspot.com/-DdTNsvAS824/YOGN75Tqp5I/AAAAAAAAI4k/o39KBOCqsg4ubgCzMPGx7-H6v8JxNd4sQCLcBGAsYHQ/w1200-h630-p-k-no-nu/images%2B%252827%2529.jpeg";
+            }
+        }
+    </script>
+</body>
+</html>
